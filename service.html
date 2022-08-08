@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  
+    
+</head>
+
+<body>
+
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="/index.html"><img src="/img/shop-logo-good.webp" alt="img not found" width="150px"></a>
+        </div>
+        <div class="nav_side">
+            <a href="body/about.html" target="_blank">About Us</a>
+            <a href="body/service.html" target="_blank">Services</a>
+            <a href="body/blog.html" target="_blank">Blogs</a>
+            <a href="body/contact.html" target="_blank">Contact</a>
+            <a href=" ">Login</a>
+        </div>
+    </nav>
+
+    <div class="product">
+        <h2>OUR PRODUCTS</h2>
+        <div class="product_container">
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="/img/comfortable-sofa.webp">
+                </div>
+                <div class="item_content">
+                    <h3>Sofa</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit cum, non ea corrupti
+                        perspicia.</p>
+                    <a href="">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="/img/beautiful-interior-modern-bedroom.webp">
+                </div>
+                <div class="item_content">
+                    <h3>Matress</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit cum, non ea corrupti
+                        perspicia.</p>
+                    <a href="">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="/img/dark-blue-chair.webp">
+                </div>
+                <div class="item_content">
+                    <h3>Chairs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit cum, non ea corrupti
+                        perspicia.</p>
+                    <a href="">Buy Now</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="submit-googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email ID"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <Textarea rows="5" cols="7" name="Review" placeholder="Write your review"></Textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <footer>
+      <div class="footer_logo">
+        <a href="/index.html"><img src="/img/shop-logo-good.webp" alt="img not found" width="150px"></a> 
+      </div>
+      <div class="pages">
+          <h3>Pages</h3>
+          <a href="/body/about.html">About Us</a>|
+          <a href="/body/services.html">Services</a>|
+          <a href="">Bloges</a>|
+          <a href="/body/contact.html">Contact Us</a>|
+          <a href="">Login</a>|
+          <a href="">Sign Up</a>
+      </div>
+      <div class="doc">
+          <h3>Documents</h3>
+          <a href="">Privacy policy</a>|
+          <a href="">Terms of Use</a>|
+          <a href="">Refund Policy</a>
+      </div>
+       <div class="social">
+           <h3>Follow us</h3>
+           <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+           <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+           <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+           <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+       </div>
+       <div class="contact">
+           <h3>Contact us</h3>
+        <a href="https://api.WhatsApp.com/send?phone=+916283344395" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="tel: +916283344395"> <i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto:ankitnatdragon2003@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+       </div>
+       <hr>
+       <p>Copyright &copy;2021 lazyshop. All rights reserved</p>
+    </footer>
+        
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxiNU55yFnrSL4BIeZtusFEKdeJkmZc0PuBCDMESdHyDWT9cJlaC1XNB611nFPjay15cg/exec'
+                const form = document.forms['submit-googlesheet']
+    
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, {
+                         method: 'POST', 
+                         body: new FormData(form)
+                        })
+                    .then(response => alert("Thank you for the review!!"))
+                    .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+    
+    </body>
+    
+    </html>
