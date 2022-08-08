@@ -50,7 +50,7 @@ body{
     transition: all 1s ease;
 }
 .main{
-    background-image: url('/img/omg-cool-offer-surprised-young.webp');
+    background-image: url('omg-cool-offer-surprised-young.webp');
     background-position: cover;
     background-size: cover;
     background-repeat: no-re""peat;
@@ -317,7 +317,7 @@ font-family: cosmic, sans-serif;
 .feed{
     margin-top: 100px;
     padding: 50px;
-   background-image: url('/img/photo-1513346940221-6f673d962e97.jfif'); 
+   background-image: url('photo-1513346940221-6f673d962e97.jfif'); 
    background-size: cover;
 }
 .feed h2{
